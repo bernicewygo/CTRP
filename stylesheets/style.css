@@ -63,7 +63,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../scss/style.scss */
+/* ===================
+   ==== overrides ==== 
+   =================== */
+/* line 7, ../scss/style.scss */
 html, body {
   font-family: 'Oswald', sans-serif;
   color: #333333;
@@ -72,39 +75,89 @@ html, body {
   background: #dddddd;
 }
 
-/* line 12, ../scss/style.scss */
+/* line 15, ../scss/style.scss */
 h1 {
   font-size: 3.7em;
   line-height: 1.2em;
 }
 
-/* line 17, ../scss/style.scss */
+/* line 20, ../scss/style.scss */
 h2 {
   color: #00e1b6;
   font-size: 2.5em;
 }
 
-/* line 22, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+/* line 30, ../scss/style.scss */
+strong, a {
+  color: #FF6700;
+}
+
+/* line 34, ../scss/style.scss */
+a:hover {
+  color: #00e1b6;
+}
+
+/* line 38, ../scss/style.scss */
+li {
+  padding-bottom: 10px;
+}
+
+/* line 42, ../scss/style.scss */
+nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+/* line 49, ../scss/style.scss */
+p {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/* ===================
+   ======= ids ======= 
+   =================== */
+/* line 58, ../scss/style.scss */
 #animate1 {
   padding: 50px 0px 0px 0px;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 #about {
   background: #ffffff;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
+#contact {
+  background: #f9f9f9;
+  text-align: center;
+}
+
+/* line 73, ../scss/style.scss */
+#faq {
+  background: #dddddd;
+  text-align: center;
+}
+
+/* line 79, ../scss/style.scss */
 #logo {
   margin-left: -30px;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 #services {
   background: #f9f9f9;
 }
 
-/* line 39, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 #title {
   text-align: center;
 }
@@ -112,37 +165,62 @@ h2 {
 /* ===================
    ===== classes ===== 
    =================== */
-/* line 49, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .center {
   text-align: center;
 }
 
-/* line 52, ../scss/style.scss */
-.fullpage, #about, #services, #title {
+/* line 103, ../scss/style.scss */
+.fullpage, #about, #contact, #faq, #services, #title {
   width: 100%;
   padding: 100px 0px 150px 0px;
   min-height: 100%;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
+.items {
+  text-align: left;
+}
+
+/* line 111, ../scss/style.scss */
 .list {
   padding-top: 15px;
   line-height: 1.3em;
 }
 
-/* line 62, ../scss/style.scss */
+/* line 115, ../scss/style.scss */
 .morebottom {
   padding-bottom: 150px;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
+.navheight {
+  height: 30px;
+}
+
+/* line 124, ../scss/style.scss */
+.navlink {
+  line-height: 12px;
+  color: #333333 !important;
+}
+/* line 128, ../scss/style.scss */
+.navlink:hover {
+  color: #00e1b6 !important;
+}
+
+/* line 132, ../scss/style.scss */
+.pad {
+  margin: 20px 0px 0px 0px;
+}
+
+/* line 136, ../scss/style.scss */
 .tab {
   padding-right: 20px;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 71, ../scss/style.scss */
-  .tab {
-    padding-right: 8px;
+  /* line 141, ../scss/style.scss */
+  h1 {
+    font-size: 3em;
   }
 }

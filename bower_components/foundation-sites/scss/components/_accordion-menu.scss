@@ -12,7 +12,7 @@ $accordionmenu-arrows: true !default;
       position: relative;
 
       &::after {
-        @include css-triangle(6px, $primary-color, down);
+        @include css-triangle(6px, #FF6700, down);
         position: absolute;
         top: 50%;
         margin-top: -4px;

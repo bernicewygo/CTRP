@@ -1,5 +1,8 @@
 @import "compass/reset";
-
+ 
+/* ===================
+   ==== overrides ==== 
+   =================== */
 
 html, body {
 	font-family: 'Oswald', sans-serif;
@@ -19,6 +22,39 @@ h2 {
 	font-size: 2.5em; 
 }
 
+h3 {
+	font-size: 1.5em;
+	padding-bottom: 10px;  
+}
+
+strong, a {
+	color: #FF6700;
+}
+
+a:hover {
+	color: #00e1b6;
+ }
+
+li {
+	padding-bottom: 10px; 
+}
+
+nav {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	padding-bottom: 5px; 
+}
+
+p {
+	text-align: left; 
+	padding-bottom: 20px; 
+}
+
+/* ===================
+   ======= ids ======= 
+   =================== */
+
 #animate1 {
 	padding: 50px 0px 0px 0px; 
 }
@@ -27,6 +63,19 @@ h2 {
 	@extend .fullpage; 
 	background: #ffffff; 
 }
+
+#contact {
+	@extend .fullpage; 
+	background: #f9f9f9; 
+	text-align: center; 
+}
+
+#faq {
+	@extend .fullpage; 
+	background: #dddddd; 
+	text-align: center; 
+}
+
 #logo {
 	margin-left: -30px; 
 }
@@ -38,7 +87,8 @@ h2 {
 }
 #title {
 	@extend .fullpage; 
-	text-align: center; 
+	text-align: center;
+  
 
 }
 
@@ -49,12 +99,15 @@ h2 {
 .center {
 	text-align: center; 
 }
+
 .fullpage {
 	width: 100%; 
 	padding: 100px 0px 150px 0px; 
 	min-height: 100%; 
 }
-
+.items {
+	text-align: left; 
+}
 .list {
 	padding-top: 15px; 
 	line-height: 1.3em; 
@@ -63,12 +116,29 @@ h2 {
 	padding-bottom: 150px; 
 }
 
+.navheight {
+	height: 30px; 
+
+}
+
+.navlink {
+	line-height: 12px; 
+	color: #333333 !important; 
+
+	&:hover {
+			color: #00e1b6 !important; 
+	}
+}
+.pad {
+	margin: 20px 0px 0px 0px;
+}
+
 .tab {
 	padding-right: 20px; 
 }
 
 @media screen and (max-width : 400px) {
-	.tab {
-		padding-right: 8px;
+	h1 {
+		font-size: 3em; 
 	}
 }
