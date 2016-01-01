@@ -1,0 +1,74 @@
+@import "compass/reset";
+
+
+html, body {
+	font-family: 'Oswald', sans-serif;
+	color: #333333; 
+	margin: 0px;
+	padding: 0px;
+	background: #dddddd; 
+}
+
+h1 {
+	font-size: 3.7em; 
+	line-height: 1.2em;
+}
+
+h2 {
+	color: #00e1b6; 
+	font-size: 2.5em; 
+}
+
+#animate1 {
+	padding: 50px 0px 0px 0px; 
+}
+
+#about {
+	@extend .fullpage; 
+	background: #ffffff; 
+}
+#logo {
+	margin-left: -30px; 
+}
+
+#services {
+	@extend .fullpage;
+	background: #f9f9f9;
+
+}
+#title {
+	@extend .fullpage; 
+	text-align: center; 
+
+}
+
+/* ===================
+   ===== classes ===== 
+   =================== */
+
+.center {
+	text-align: center; 
+}
+.fullpage {
+	width: 100%; 
+	padding: 100px 0px 150px 0px; 
+	min-height: 100%; 
+}
+
+.list {
+	padding-top: 15px; 
+	line-height: 1.3em; 
+}
+.morebottom{
+	padding-bottom: 150px; 
+}
+
+.tab {
+	padding-right: 20px; 
+}
+
+@media screen and (max-width : 400px) {
+	.tab {
+		padding-right: 8px;
+	}
+}
